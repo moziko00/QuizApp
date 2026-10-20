@@ -11,12 +11,18 @@
                      "What is the capital of Germany?",
                      new string[] { "Berlin", "Munich", "Frankfurt", "Hamburg" },
                      0
+                ),
+                 new Question
+                (
+                     "What is 2+2?",
+                     new string[] { "4", "5", "6", "7" },
+                     0
                 )
             };
 
 
             Quiz quiz = new Quiz(questions);
-            quiz.DisplayQuestion(questions[0]);
+            quiz.StartQuiz();
 
             Console.ReadKey();
         }
